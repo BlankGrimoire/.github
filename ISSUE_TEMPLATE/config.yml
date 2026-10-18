@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ❌ Website support requests
+    url: https://github.com/BlankGrimoire/BlankGrimoire-themes/blob/main/CONTRIBUTING.md
+    about: Requests to support specific websites are not accepted. Adapters target themes, not sites. Read why here.
+  - name: 🔐 Security vulnerability
+    url: https://github.com/BlankGrimoire/.github/blob/main/SECURITY.md
+    about: Please report vulnerabilities privately. Do not open a public issue.
+  - name: 📜 Code of Conduct
+    url: https://github.com/BlankGrimoire/.github/blob/main/CODE_OF_CONDUCT.md
+    about: Please read our Code of Conduct before participating.
