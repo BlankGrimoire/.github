@@ -1,0 +1,92 @@
+name: 🐞 Bug report
+description: Report a problem with the app, the SDK or a theme adapter.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+        ⚠️ **Do not include real website domains, links or copyrighted content.**
+        If an adapter broke, describe the **structural change** with a synthetic HTML snippet.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - iOS app
+        - SDK (types / runtime / testing / cli)
+        - Theme adapter
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: App version, SDK package version or adapter id and version.
+      placeholder: "e.g. app 0.1.0 · @blankgrimoire/runtime 2.0.0 · theme.wp-manga 1.2.0"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Device and OS (app) or Node / OS version (SDK, themes).
+      placeholder: "e.g. iPhone 15, iOS 18.1 · Node 22, macOS 15"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Tap ...
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: snippet
+    attributes:
+      label: Synthetic HTML / JSON snippet (adapters only)
+      description: A minimal, hand-written example of the structure that fails. Use placeholders such as example.org and Lorem ipsum.
+      render: html
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant logs or error messages. Remove any URLs, cookies or personal data.
+      render: shell
+
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and this has not been reported yet.
+          required: true
+        - label: This report contains no real website domains, links or copyrighted content.
+          required: true
+        - label: I have read the Code of Conduct.
+          required: true
