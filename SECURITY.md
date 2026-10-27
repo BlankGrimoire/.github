@@ -21,7 +21,7 @@ Report vulnerabilities privately through one of these channels:
 
 1. GitHub **Private vulnerability reporting**: open the affected repository,
    go to **Security → Report a vulnerability**;
-2. email: **pr3o.y@gmail.com**.
+2. email: **blankgrimoire.dev@gmail.com**.
 
 Please include:
 

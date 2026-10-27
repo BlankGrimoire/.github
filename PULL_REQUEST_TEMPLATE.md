@@ -31,7 +31,7 @@
 
 - [ ] Tests added or updated, and all tests pass locally
 - [ ] Lint / format checks pass
-- [ ] `CHANGELOG.md` updated under `[Unreleased]` (if user-facing)
+- [ ] PR title follows [Conventional Commits](https://www.conventionalcommits.org/) (it drives versioning and the changelog)
 - [ ] Commit messages follow [Conventional Commits](https://www.conventionalcommits.org/)
 - [ ] Documentation updated (if needed)
 
